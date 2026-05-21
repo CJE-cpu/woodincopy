@@ -1,0 +1,52 @@
+header{
+    position: absolute;
+}
+.galleryBox{
+    width: 100%;
+    display: flex;
+    background-color: #ededed;
+    flex-direction: column;
+}
+.galleryBoximg{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: white;
+    margin-top: 90px;
+    padding: 100px;
+    flex-direction: column;
+}
+.galleryBoxSNS{
+    width: 87.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.galleryBoxSNS div h1{
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Elms Sans", sans-serif;
+    margin: 20px;
+}
+.galleryBoxSNS h4{
+    display: inline-block;
+    font-size: 24px;
+}
+.galleryboxSNSimg{
+    width: 100%;
+}
+.galleryboxSNSimg div{
+    width: calc(100%/3);
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    border: 1px solid green;
+}
+.galleryboxSNSimg div p{
+    position: absolute;
+}

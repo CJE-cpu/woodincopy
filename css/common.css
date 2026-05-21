@@ -1,0 +1,162 @@
+body{
+    background-color: #ededed;
+}
+header{
+    width: 100%;
+    height: 90px;
+    background-color: none;
+    z-index: 10;
+    position: fixed;
+    transition: all 0.4s;
+    transition-delay: 0.1s;
+}
+nav{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+a{
+    cursor: pointer;
+}
+.gnb{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    text-align: left;
+    line-height: 90px;
+}
+.logo{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+}
+.gnb > li{
+    width: 150px;
+    height: 90px;
+}
+.gnb > li:hover{
+    color: green;
+}
+.gnb > li > a{
+    font-weight: 600;
+}
+.snbBox{
+    width: 95%;
+    height: 500px;
+    background-color: #ededed;
+    display: none;
+    justify-content: left;
+    align-items: baseline;
+    margin-top: 90px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    z-index: 9;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.snbBox.woodin.on{
+    display: flex;
+}
+.snbBox.products.on{
+    display: flex;
+}
+.snbBox.support.on{
+    display: flex;
+}
+.snb{
+    width: 150px;
+    height: 100%;
+    padding-top: 20px;
+}
+.snb > li{
+    margin: 20px 0;
+}
+.snb > a{
+    font-weight: bold;
+}
+.brand{
+    margin-left: 250px;
+}
+.door{
+    margin-left: 100px;
+}
+.sup{
+    margin-left: 550px;
+}
+div > ul > li > a{
+    cursor: pointer;
+}
+div > ul > li > a:hover{
+    border-bottom: 1px solid black;
+}
+footer{
+    width: 100%;
+    height: 180px;
+    background-color: black;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > nav{
+    width: 95%;
+    height: 50%;
+    margin: 0 auto;
+}
+footer > nav > ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+}
+.footerlogo{
+    align-self: baseline;
+    width: 150px;
+    height: 100%;
+    border-right: 1px solid #333;
+}
+.footertext{
+    width: 70%;
+    height: 100%;
+    font-size: 14px;
+    gap: 20px;
+}
+.footertext ul{
+    display: flex;
+    height: calc(100%/3);
+    gap: 15px;
+}
+.footertext ul:nth-child(3){
+    align-items: flex-end;
+}
+.footertext2{
+    font-size: 14px;
+}
+.footertext2 ul{
+    display: flex;
+    gap: 15px;
+    height: 50%;
+}
+.footertext2 ul:nth-child(2){
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+.footertext2 ul:nth-child(2) li{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
