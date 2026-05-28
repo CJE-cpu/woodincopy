@@ -132,22 +132,67 @@
                 <div>
                     <h1>COLLECTION</h1>
                     <h4>컬렉션</h4>
-                    <div class="galleryboxSNSimg">
-                        <div>
-                            <p>#보드 #힐링월 #인테리어<br>
-                                VIEW MORE ＋</p>
-                            <img src="./img/str1.jpg" alt="str1"/>
-                        </div>
-                        <div>
-                            <p>#시공사례 #인테리어필름 #인테리어<br>
-                                VIEW MORE ＋</p>
-                            <img src="./img/str2.jpg" alt="str2"/>
-                        </div>
-                        <div>
-                            <p>#펫도어 #펫테리어 #TD-52<br>
-                                VIEW MORE ＋</p>
-                            <img src="./img/str3.jpg" alt="str3"/>
-                        </div>
+                </div>
+                <div class="galleryboxSNSimg">
+                    <div>
+                        <p>레이어드홈<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery1.jpg" alt="gal1"/>
+                    </div>
+                    <div>
+                        <p>거실 인테리어 01<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery2.jpg" alt="gal2"/>
+                    </div>
+                    <div>
+                        <p>거실 인테리어 02<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery3.jpg" alt="gal3"/>
+                    </div>
+                    <div>
+                        <p>레이어드홈<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery1.jpg" alt="gal1"/>
+                    </div>
+                    <div>
+                        <p>거실 인테리어 01<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery2.jpg" alt="gal2"/>
+                    </div>
+                    <div>
+                        <p>거실 인테리어 02<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery3.jpg" alt="gal3"/>
+                    </div>
+                    <div>
+                        <p>레이어드홈<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery1.jpg" alt="gal1"/>
+                    </div>
+                    <div>
+                        <p>거실 인테리어 01<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery2.jpg" alt="gal2"/>
+                    </div>
+                    <div>
+                        <p>거실 인테리어 02<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery3.jpg" alt="gal3"/>
+                    </div>
+                    <div>
+                        <p>레이어드홈<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery1.jpg" alt="gal1"/>
+                    </div>
+                    <div>
+                        <p>거실 인테리어 01<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery2.jpg" alt="gal2"/>
+                    </div>
+                    <div>
+                        <p>거실 인테리어 02<br>
+                            VIEW MORE ＋</p>
+                        <img src="./img/gallery3.jpg" alt="gal3"/>
                     </div>
                 </div>
             </div>
@@ -191,5 +236,17 @@
         </nav>
     </footer>
     <script src="./js/common.js"></script>
+    <script>
+        let galleryBoxs = document.querySelectorAll(".galleryboxSNSimg div")
+
+        galleryBoxs.forEach(function(item){
+            item.addEventListener("mouseenter", function(){
+                item.classList.add("on")
+            })
+            item.addEventListener("mouseleave", function(){
+                item.classList.remove("on")
+            })
+        })
+    </script>
 </body>
 </html>
