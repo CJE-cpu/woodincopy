@@ -147,6 +147,13 @@
     gap: 20px;
     overflow: hidden;
     transition: all 0.5s;
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.home3text div:hover{
+    background-size: 125%;
+    cursor: pointer;
 }
 .home3text div:nth-child(2){
     color: black;
@@ -171,4 +178,107 @@
 }
 .home3img div{
     width: 25%;
+}
+.home3img div:hover{
+    background-size: 125%;
+    cursor: pointer;
+}
+.home4{
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+}
+.home4box{
+    width: 35%;
+    height: 85%;
+    margin-top: 90px;
+    color: white;
+    text-align: right;
+    font-family: "Elms Sans", sans-serif;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 50px;
+}
+.home4box h4{
+    font-weight: 500;
+}
+.home4box h1{
+    font-size: 48px;
+    font-weight: 100;
+}
+.home4box hr{
+    width: 60px;
+    height: 0.5px;
+    background-color: #666;
+    opacity: 0.5;
+}
+.home4box p{
+    opacity: 0.5;
+}
+.home4box2{
+    width: 65%;
+    height: 85%;
+    margin-top: 90px;
+    border-radius: 10px;
+    background-image: url("./img/home4.jpg");
+}
+.home5{
+    width: 100%;
+    height: 100vh;
+    background-color: #ededed;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/home5bg.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
+    font-family: "Elms Sans", sans-serif;
+}
+.home5box{
+    width: 95%;
+    height: 85%;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    gap: 30px;
+}
+.home5box h1{
+    font-size: 54px;
+    font-weight: 100;
+}
+.home5gal{
+    gap: 20px;
+    display: flex;
+}
+.home5img img{
+    border-radius: 10px;
+}
+.home5img img:hover{
+    cursor: pointer;
+}
+.home5img p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.cur{
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background-image: url(./img/imgi_13_slide_drag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: fixed;
+    z-index: 11;
+    left: 0; top: 0;
+    transition: all 0.1s;
 }
