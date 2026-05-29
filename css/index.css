@@ -1,11 +1,17 @@
 .home{
-    width: 100%;
+    width: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: baseline;
-    color: white;
+    color: transparent;
     background-color: #ededed;
+    transition: all 1s;
+    margin: 0 auto;
+}
+.home.on{
+    width: 100%;
+    color: white;
 }
 .homeimg{
     display: flex;
@@ -28,6 +34,12 @@
     font-weight: thin 100;
     font-style: normal;
     word-spacing: 5px;
+    top: 60%;
+    animation-delay: 1s;
+    transition: all 1s;
+}
+.homeimg p.on{
+    top:40%;
 }
 .home2{
     width: 95%;
@@ -37,6 +49,11 @@
     align-items: center;
     background-color: #ededed;
     margin: 0 auto;
+    color: transparent;
+    transition: all 1s;
+}
+.home2.on{
+    color: black;
 }
 .home2text{
     width: 50%;
@@ -52,6 +69,13 @@
     font-weight: 600;
     font-family: "Elms Sans", sans-serif;
     font-size: 18px;
+    color: transparent;
+    transform: translateX(100px);
+    transition: all 1s;
+}
+.home2text p.on{
+    color: black;
+    transform: none;
 }
 .home2text h2{
     font-size: 60px;
