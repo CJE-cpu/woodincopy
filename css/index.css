@@ -82,6 +82,12 @@
     font-family: "Elms Sans", sans-serif;
     font-weight: lighter;
     line-height: 65px;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+.home2text h2.on{
+    color: black;
+    transform: translateY(0);
 }
 .home2text hr{
     width: 80px;
@@ -213,7 +219,7 @@
     background-color: #101010;
     color: white;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 .home4box{
     width: 35%;
@@ -233,7 +239,7 @@
     font-weight: 500;
 }
 .home4box h1{
-    font-size: 48px;
+    font-size: 60px;
     font-weight: 100;
 }
 .home4box hr{
@@ -306,4 +312,45 @@
     left: 0; top: 0;
     transition: all 0.1s;
     display: none;
+}
+.home6{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #ededed;
+    background-image: url("./img/imgi_43_brand_bg.jpg");
+    transition: all 1s;
+    margin: 0 auto;
+    flex-direction: column;
+    font-family: "Elms Sans", sans-serif;
+    text-transform: uppercase;
+    gap: 40px;
+}
+.home6 h1{
+    font-size: 60px;
+    font-weight: 100;
+}
+.home6imgs{
+    width: 60%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    text-align: center;
+}
+.home6imgs div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    font-weight: 300;
+}
+.home6imgs div h2{
+    font-size: 30px;
+    font-weight: 300;
 }

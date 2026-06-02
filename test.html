@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="moveBtn">섹션 이동</button>
+
+<section style="height:100vh; background:lightgray;">
+  첫 화면
+</section>
+
+<section id="targetSection" style="height:100vh; background:lightblue;">
+  이동할 섹션
+</section>
+
+<script>
+const moveBtn = document.getElementById('moveBtn');
+const targetSection = document.getElementById('targetSection');
+
+moveBtn.addEventListener('click', () => {
+  targetSection.scrollIntoView({
+    behavior: 'smooth', // 부드러운 스크롤
+    block: 'start'      // 섹션 상단 기준
+  });
+});
+</script>
+</body>
+</html>

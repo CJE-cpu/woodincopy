@@ -1,4 +1,5 @@
-let scroll = document.querySelectorAll(".scroll")
+const scroll = document.querySelectorAll(".scroll")
+const move = document.querySelectorAll(".move")
 let observer = new IntersectionObserver(function(entries){
     entries.forEach(function(item){
         if(item.isIntersecting){
@@ -10,17 +11,50 @@ let observer = new IntersectionObserver(function(entries){
 }, {
     threshold : 0.5
 })
-scroll.forEach(function(item){
+move.forEach(function(item){
     observer.observe(item)
 })
 
-// window.addEventListener("scroll", function(){
-//     let lastScroll = 0
-//     if(window.scrollY > lastScroll){
-//         window.scrollBy(0, window.innerHeight)
-//     }
-// })
+function createAutoScroller(selector) {
+  const sections = document.querySelectorAll(selector);
 
+  let currentIndex = 0;
+  let isScrolling = false;
+
+  return function (deltaY) {
+    if (isScrolling) return;
+
+    isScrolling = true;
+
+    if (deltaY > 0) {
+      currentIndex = Math.min(
+        currentIndex + 1,
+        sections.length - 1
+      );
+    } else {
+      currentIndex = Math.max(
+        currentIndex - 1,
+        0
+      );
+    }
+
+    sections[currentIndex].scrollIntoView({
+      behavior: 'smooth'
+    });
+
+    setTimeout(() => {
+      isScrolling = false;
+    }, 800);
+  };
+
+}
+
+
+const autoScroll = createAutoScroller('.scroll');
+
+window.addEventListener('wheel', (e) => {
+  autoScroll(e.deltaY);
+});
 
 let home5imgs = document.querySelectorAll(".home5img img")
 let cur = document.querySelector(".cur")
