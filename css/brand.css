@@ -8,14 +8,14 @@ header{
     justify-content: center;
     align-items: center;
     background-color: #ededed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .brandstoryimg{
     width: 95%;
     height: 85%;
     background-image: url(./img/brand.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     align-self: baseline;
     margin-top: 90px;
 }
